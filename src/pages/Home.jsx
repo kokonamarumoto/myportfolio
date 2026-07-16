@@ -1,8 +1,4 @@
-import  { Header } from "./Header";
-import { Profile } from "./Profile";
-import { Skills } from "./Skills";
-import { Projects } from "./Projects";
-import { Contact } from "./Contact";
+
 
 import profileImage from "../assets/profile.jpg";
 
