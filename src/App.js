@@ -1,17 +1,31 @@
 import './App.css';
-// Headerコンポーネントをimportする
-import { Header } from './components/Header';
-import { Skills } from './components/Skills';
-import { Contact } from './components/Contact';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
+import { Profile } from "./pages/Profile";
+import { Skills } from "./pages/Skills";
+import { Projects } from "./pages/Projects";
+import { Contact } from "./pages/Contact";
+
+
 
 function App() {
   return (
-   <>
-    <Header /> 
-    <Skills />
-    <Contact />
-   </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/:id" element={<ProjectDetail />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
