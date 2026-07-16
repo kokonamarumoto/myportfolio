@@ -7,6 +7,7 @@ import project2Image from "../assets/anime-record.png";
 import project2edit from "../assets/anime-edit.png";
 import project2dialog from "../assets/dialog.png";
 import project2login from "../assets/anime-login.png";
+import project2signup from "../assets/anime-signup.png";
 
 import project3Image from "../assets/record-app.png";
 import dashboardImage from "../assets/dashboard.png";
@@ -15,6 +16,7 @@ import project3study from "../assets/record-study.png";
 import project3album from "../assets/record-album.png";
 import project3memo from "../assets/record-memo.png";
 import project3login from "../assets/record-login.png";
+import project3signup from "../assets/record-signup.png";
 
 
 export const projects = [
@@ -80,6 +82,9 @@ export const projects = [
        },
        {src:project2login,
         title:"ログイン画面"
+       },
+         {src:project2signup,
+        title:"新規ユーザー登録"
        }
     ],
     githubUrl: "https://github.com/kokonamarumoto/anime-record-app/tree/main",
@@ -133,6 +138,8 @@ export const projects = [
       {src:project3login,
         title:"ログイン画面",}
       ,
+      {src:project3signup,
+        title:"新規ユーザー登録",}
     ],
     githubUrl: "https://github.com/kokonamarumoto/record-app",
     demoUrl: "https://recordapp-gamma.vercel.app/",
