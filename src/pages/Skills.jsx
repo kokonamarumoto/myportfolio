@@ -7,19 +7,19 @@ import {
 } from "react-icons/fa";
 import { SiFlask, SiDjango, SiTypescript, SiNextdotjs } from "react-icons/si";
 
-const skills = [
-  { name: "HTML", icon: <FaHtml5 />, stars: 2 },
-  { name: "CSS", icon: <FaCss3Alt />, stars: 2 },
-  { name: "JavaScript", icon: <FaJsSquare />, stars: 1},
+// const skills = [
+//   { name: "HTML", icon: <FaHtml5 />, stars: 2 },
+//   { name: "CSS", icon: <FaCss3Alt />, stars: 2 },
+//   { name: "JavaScript", icon: <FaJsSquare />, stars: 1},
   
-  { name: "Python", icon: <FaPython />, stars: 2 },
-  { name: "Flask", icon: <SiFlask />, stars: 1 },
-  { name: "Django", icon: <SiDjango />, stars: 2 },
-  { name: "React", icon: <FaReact />, stars: 1 },
-  { name: "TypeScript", icon: <SiTypescript />, stars: 1 },
-  { name: "Next.js", icon: <SiNextdotjs />, stars: 1 },
+//   { name: "Python", icon: <FaPython />, stars: 2 },
+//   { name: "Flask", icon: <SiFlask />, stars: 1 },
+//   { name: "Django", icon: <SiDjango />, stars: 2 },
+//   { name: "React", icon: <FaReact />, stars: 1 },
+//   { name: "TypeScript", icon: <SiTypescript />, stars: 1 },
+//   { name: "Next.js", icon: <SiNextdotjs />, stars: 1 },
   
-];
+// ];
 
 // export const Skills = () => {
 //   return (
