@@ -679,6 +679,39 @@ transform: scale(0.8);
   border-radius: 14px;
 }
 
+
+
+.project-detail__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.project-detail__nav-btn {
+  display: inline-block;
+  
+
+  color: #5a4632;
+
+  text-decoration: none;
+  padding: 10px 14px;
+  border: 1px solid #c7b08d;
+  border-radius: 999px;
+  background: rgba(251, 246, 235, 0.9);
+
+ 
+  font-weight: 600;
+  font-size: 23px;
+
+  margin: 20px;
+  margin-top: 0;
+}
+
+.project-detail__nav-btn:hover{
+   background: #efe4cf;
+   transition: 0.3s;
+}
 /* Skills */
 
 .subtitle{
@@ -764,14 +797,20 @@ position: relative;
 }
 
 .contact-button {
-  display: inline-block;
+  
+display: flex;
+  justify-content: center; /* 全体を中央に */
+  margin-left: 40%;
+  margin-right: 40%;;
   margin-top: 16px;
-  padding: 12px 18px;
+  padding: 10px 16px;
   border-radius: 999px;
   border: 1px solid #c7b08d;
   background: #efe2c8;
   text-decoration: none;
   transition: transform 0.2s ease, background 0.2s ease;
+  font-size: 20px;
+  font-weight: 90px;
   
 }
 

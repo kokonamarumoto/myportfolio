@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { projects } from "../data/projects";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,11 +12,36 @@ import "swiper/css/pagination";
 const ProjectDetail = () => {
 
   const { id } = useParams();
-  const project = projects.find((item) => item.id === Number(id));
+  
+  const currentId = Number(id);
+
+  const project = projects.find((item) => item.id === currentId);
+
+
+    useEffect(() => {
+    window.scrollTo({
+  top: 0,
+  behavior: "smooth",
+});
+  }, [id]);
+  
 
   if (!project) {
     return <p>作品が見つかりませんでした。</p>;
   }
+
+
+  const currentIndex = projects.findIndex((item) => item.id === currentId);
+
+  const prevIndex =
+    currentIndex === 0 ? projects.length - 1 : currentIndex - 1;
+
+  const nextIndex =
+    currentIndex === projects.length - 1 ? 0 : currentIndex + 1;
+
+  const prevProject = projects[prevIndex];
+  const nextProject = projects[nextIndex];
+
 
   return(
     <section className="page paper">
@@ -118,6 +144,17 @@ const ProjectDetail = () => {
 
 
       </div>
+
+      <div className="project-detail__nav">
+        <Link to={`/projects/${prevProject.id}`} className="project-detail__nav-btn">
+          ← 前の作品へ
+        </Link>
+
+        <Link to={`/projects/${nextProject.id}`} className="project-detail__nav-btn">
+          次の作品へ →
+        </Link>
+      </div>
+
 
     
     </section>
