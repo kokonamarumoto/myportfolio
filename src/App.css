@@ -216,7 +216,7 @@ main {
 
 
 .section-title {
-  font-size: 33px;
+  font-size: 38px;
   margin: 0 0 24px;
   font-family: "Georgia", "Times New Roman", serif;
   color: #57452f;
@@ -714,13 +714,10 @@ transform: scale(0.8);
 }
 /* Skills */
 
-.subtitle{
-  margin-top: 3px;
-  margin-bottom: 25px;
-}
+
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
@@ -775,7 +772,27 @@ position: relative;
   letter-spacing: 2px;
 }
 
+/*add*/
+.skill-group {
+  margin-bottom: 32px;
+}
 
+.skill-group__title {
+  font-size: 30px;
+  margin-bottom: 0px;
+   font-family: "Georgia", "Times New Roman", serif;
+  color: #57452f;
+  letter-spacing: 0.04em;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  color: #57452f;
+  
+  margin-top: 0;
+  font-size: 20px;
+
+}
 /* ===== Contact ===== */
 .contact-card {
   
